@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=script, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>body{background-color: black}</style>
+</head>
+<body>
+    
+
+    <input type="button" value="precione" id="boton">
+    <input type="text" id="n1">
+    <input type="text" id="n2">
+    <script>
+        document.getElementById("boton").addEventListener("click",function sumar(){
+            alert(parseInt(document.getElementById("n1").value)
+                +parseInt(document.getElementById("n2").value));
+        });
+    </script>
+</body>
+</html>

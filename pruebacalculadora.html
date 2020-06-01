@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="precioname" id="botoncito">
+    <input type="text" id="n1">
+    <input type="text" id="n2">
+    <script>
+        document.getElementById("botoncito").addEventListener("click",// tambien se piuede hacer esto
+        //var boton=document.getElementById("botoncito") //valido tambien
+        //boton.addEventListener("click",sumar); //valido tambien
+        function sumar(){ //es obligatorio tener una funcion al realizar un evento
+            //las variables se declaran dentro de la funcion cuando la funcion usa tales variables
+            // a y b solo se declara dentro de esta funcion
+            //var a=parseInt(document.getElementById("n1").value); // valido tambien
+            //var b=parseInt(document.getElementById("n2").value); //valido tambien
+            //alert(a+b); //valido tambien
+            document.write("<h1>"+(parseInt(document.getElementById("n1").value)+
+                                   parseInt(document.getElementById("n2").value))+"</h1>");//codigo html dentro de "" string
+        }
+    );
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tu peso en un lugar donde pesas menos</title>
+</head>
+<body>
+    <h1>tu peso</h1>
+    <p>en la tierra pesas distinto que en jupiter o marte</p>
+    <script>
+        var usuario=prompt("cual es tu peso?");
+        //var peso=parseInt(usuario); //convierte de texto a numero
+        var peso=parseFloat(usuario);
+        var g_tierra=9.8;
+        var g_marte=3.7;
+        var g_jupiter=24.8;
+        var peso_final;
+        peso_final=(peso*g_marte)/g_tierra;
+        //alert(peso_final);
+        //peso_final=parseInt(peso_final); //redondea
+        //peso_final=parseFloat(peso_final); 
+        peso_final=(peso_final); 
+        document.write("tu peso es en marte <strong>" + peso_final+ " kilos</strong>"); // se puede poner codigo html en los string
+    </script>
+</body>
+</html>

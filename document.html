@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" /><!--coleccion de caracterres mas popular para añadir comas y otras caracteres especiales -->
+        <title>Document Object Model (DOM)</title>
+    </head>
+    <body>
+        <h1>Vamos a jugar con windows y document</h1>
+        <!-- por defecto todos los script son text/javascript por eso no pasa nada si se lo quita -->
+        <script type="text/javascript">// el script debe estar antes de cerrar el body
+        //objeto window
+        //depurar buscar error en un codigo
+            var ruta =window.location; //toma la ruta de la pagina //location es una variable interna del objeto window//location es un atributo o propiedad de window
+            console.log(ruta); // solo se puede ver en la consola del navegador para depuracion
+            document.write(ruta.assign);//busca la varibale
+            document.write("Estas en: "+ruta);// cuando las funciones estan dentro de un objeto son metodos
+        </script>
+        
+    </body>
+
+</html>
+<!--En programación existen objetos, estos son como envolturas para código, el navegador tiene algunos nativos cómo:
+
+navigator: El objeto que contiene las funciones del navegador, también te permite acceder también al sistema operativo como el gps, guardar datos en el disco duro, etc.
+
+window: El objeto que maneja cada una de las pestañas.
+
+document: El objeto que contiene todo lo que vemos dentro de nuestra página
+
+En aplicaciones web tenemos un concepto llamado DOM (Document Object Model) es la forma en que internamente el navegador organiza todo el HTML dentro de una estructura de árbol
+-->
+<!--Veamos cómo utilizar el DOM
+
+Los objetos contienen
+
+Métodos: funciones dentro de un objeto
+Atributo o propiedad: variables internas que almacenan valores
+Recuerda:
+
+Las únicas etiquetas que deben ir a la misma altura de la etiqueta html es head y body
+window.location devuelve la ruta de la página
+Para agregar soporte a tildes y letras especiales puedes usar dentro de head
+Cuándo quieres depurar un programa puedes usar console.log para ver mensajes en la consola
+-->
